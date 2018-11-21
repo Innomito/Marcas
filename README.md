@@ -1,3 +1,3 @@
 # Marcas
 
-Life Is Strange --> https://raw.githack.com/Innomito/Marcas/master/LifeIsStrange.html
+Life Is Strange --> https://raw.githack.com/carlossombra2/Marcas/master/lis.html
