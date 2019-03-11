@@ -1,5 +1,5 @@
-// fichero xml que est· en el servidor rawgit
-var url="https://rawgit.com/JuanAntonioBieto/LM-Formulario/master/xml/xmlconDTD.xml";
+// fichero xml que est√° en el servidor rawgit
+var url="https://github.com/Innomito/Marcas/blob/master/Tasca14/Formulario/xml/form.xml";
 
 //Variables
 var i = 0;
@@ -18,7 +18,7 @@ var xhttp = new XMLHttpRequest();
 window.onload = function(){ 
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			// funciÛn personalizada que gestiona la respuesta a la peticiÛn de fichero
+			// funci√≥n personalizada que gestiona la respuesta a la petici√≥n de fichero
 			gestionarXml(this); 
 		}
 	};
@@ -26,7 +26,7 @@ window.onload = function(){
 	xhttp.send();
 	//************************************************************************************************************************
 	
-	//CORREGIR al apretar el botÛn
+	//CORREGIR al apretar el bot√≥n
 	formElement=document.getElementById("formulario");
 	formElement.onsubmit=function(){
 		inicializar();
@@ -46,7 +46,7 @@ window.onload = function(){
 	
 }
 //************************************************************************************************************************
-// funciÛn personalizada que gestiona la respuesta a la peticiÛn de fichero
+// funci√≥n personalizada que gestiona la respuesta a la petici√≥n de fichero
 function gestionarXml(dadesXml){
 	var xmlDoc = dadesXml.responseXML;
 	//Text
@@ -247,7 +247,7 @@ function corregirMultiple(){
 				}
             	if(Acertada[i]){
 					
-					darExplicacion("La respuesta " + (pregunta+1) + ": OpciÛn: " + i + " Es correcta +" + (1.0/numRespuestas[pregunta]).toFixed(2) + " puntos");
+					darExplicacion("La respuesta " + (pregunta+1) + ": Opci√≥n: " + i + " Es correcta +" + (1.0/numRespuestas[pregunta]).toFixed(2) + " puntos");
 					
             		nota +=1.0/numRespuestas[pregunta];
 					
@@ -255,7 +255,7 @@ function corregirMultiple(){
 					
                 	nota -=1.0/numRespuestas[pregunta];
 					
-					darExplicacion("La respuesta " + (pregunta+1) + ": OpciÛn: " + i + " Es incorrecta -" + (1.0/numRespuestas[pregunta]).toFixed(2) + " puntos");
+					darExplicacion("La respuesta " + (pregunta+1) + ": Opci√≥n: " + i + " Es incorrecta -" + (1.0/numRespuestas[pregunta]).toFixed(2) + " puntos");
 					
 					
 				}
@@ -294,13 +294,13 @@ function corregirCheckbox(){
 				
 				if(Acertada[i]){
 					
-					darExplicacion("La respuesta " + (pregunta+1) + ": OpciÛn: " + (i+1) + " Es correcta +" + (1.0/numRespuestas[pregunta]).toFixed(2) + " puntos"); 
+					darExplicacion("La respuesta " + (pregunta+1) + ": Opci√≥n: " + (i+1) + " Es correcta +" + (1.0/numRespuestas[pregunta]).toFixed(2) + " puntos"); 
 					
 					nota +=1.0/numRespuestas[pregunta];    
 					
 					}else{
 					
-					darExplicacion("La respuesta " + (pregunta+1) + ": OpciÛn: " + (i+1) + " Es incorrecta -" + (1.0/numRespuestas[pregunta]).toFixed(2) + " puntos");
+					darExplicacion("La respuesta " + (pregunta+1) + ": Opci√≥n: " + (i+1) + " Es incorrecta -" + (1.0/numRespuestas[pregunta]).toFixed(2) + " puntos");
 					
 					nota -=1.0/numRespuestas[pregunta];  
 					
