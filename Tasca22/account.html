@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tasca22</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://d2q63o9r0h0ohi.cloudfront.net/images/icons/favicon-6eb3c4e3d34a90d05dda08ee5d8024e191f23fd7500428011b48ffb7c141da590456ca053a66f9893bef76445eb88980ea51c806b650564685fc4b2b40686d17.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand" href="index.html"><img id="logo" src="https://d2q63o9r0h0ohi.cloudfront.net/images/icons/favicon-6eb3c4e3d34a90d05dda08ee5d8024e191f23fd7500428011b48ffb7c141da590456ca053a66f9893bef76445eb88980ea51c806b650564685fc4b2b40686d17.ico"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="game.html">Juego</a></li>
+				<li><a href="account.html">Crear cuenta</a></li>
+			</ul>
+			<form class="navbar-form navbar-left" action="/action_page.php">
+				<div class="form-group">
+					<input type="text" class="form-control" name="search">
+				</div>
+				<button type="Buscar" class="btn btn-default">Buscar</button>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Conectar</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<div class="text-center"><h1>Crear una cuenta</h1></div>
+	<form>
+		<div class="form-row">
+			<div class="form-group col-lg-12">
+				<label for="inputState"></label>
+				<select id="inputState" class="form-control">
+					<option selected>Elige un País</option>
+					<option>España</option>
+					<option>Francia</option>
+					<option>Alemania</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="inputName"></label>
+				<input type="text" class="form-control" id="inputName" placeholder="Nombre">
+			</div>
+			<div class="form-group col-md-6">
+				<label for="inputName2"></label>
+				<input type="text" class="form-control" id="inputName2" placeholder="Apellido">
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<div class="form-group col-md-4">
+				<label for="inputDay"></label>
+				<input type="text" class="form-control" id="inputDay" placeholder="Día de nacimiento">
+			</div>
+			<div class="form-group col-md-4">
+				<label for="inputMonth"></label>
+				<select id="inputMonth" class="form-control">
+					<option selected>Elige un mes</option>
+					<option>Enero</option>
+					<option>Febrero</option>
+					<option>Marzo</option>
+					<option>Abril</option>
+					<option>Mayo</option>
+					<option>Junio</option>
+					<option>Julio</option>
+					<option>Agosto</option>
+					<option>Septiembre</option>
+					<option>Octubre</option>
+					<option>Noviembre</option>
+					<option>Diciembre</option>
+				</select>
+			</div>
+			<div class="form-group col-md-4">
+				<label for="inputYear"></label>
+				<input type="text" class="form-control" id="inputYear" placeholder="Año">
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-lg-12">
+				<label for="inputMail"></label>
+				<input type="text" class="form-control" id="inputMail" placeholder="Dirección de correo electrónico">
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-lg-12">
+				<label for="inputDay"></label>
+				<input type="password" class="form-control" id="inputDay" placeholder="Contraseña">
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-lg-12">
+				<label for="inputState"></label>
+				<select id="inputState" class="form-control">
+					<option selected>Selecciona una pregunta</option>
+					<option>¿Cuál fue el primer videojuego que terminaste?</option>
+					<option>¿Cuál es el nombre de tu segunda mascota?</option>
+					<option>¿Cuál fue la ciudad de destino de tu primer vuelo?</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-lg-12">
+				<label for="inputMail"></label>
+				<input type="text" class="form-control" id="inputMail" placeholder="Respuesta secreta">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" id="gridCheck">
+				<label class="form-check-label" for="gridCheck">
+					Recibir noticias y ofertas especiales de productos y servicios de terceros por email.
+				</label>
+				<span class="help-block">Noticias cuidadosamente seleccionadas y ofertas especiales de productos y servicios de terceros por email.</span>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" id="gridCheck">
+				<label class="form-check-label" for="gridCheck">
+					He leído y comprendo la Política de privacidad.
+				</label>
+				<span class="help-block">Para obtener más información acerca de cómo usamos esta información y de tus derechos al respecto, comprueba nuestra política de privacidad.</span>
+			</div>
+		</div>
+		<button type="button" class="btn btn-primary btn-block">Crear una cuenta gratuita</button>
+		<button type="button" class="btn btn-default btn-block">¿Ya tienes una cuenta?</button>
+	</form>
+	<div class="text-center"> 
+		<h3>Al hacer clic en “Crear una cuenta gratuita”, estás de acuerdo con lo establecido en el <a rel="external" target="_blank" href="http://eu.blizzard.com/es-es/company/legal/eula.html">Acuerdo de Licencia de Usuario Final de Blizzard<i class="icon-external-link"></i></a>, la <a rel="external" target="_blank" href="http://eu.blizzard.com/company/legal/anti-cheating.html">Acuerdo Anti-trampas<i class="icon-external-link"></i></a> y el <a rel="external" target="_blank" href="http://eu.blizzard.com/company/legal/chat-agreement.html">Acuerdo del Chat<i class="icon-external-link"></i></a>.<br>
+		</h3> 
+	</div>
+
+	<div class="container-fluid">
+		<span class="glyphicon glyphicon-globe"> IDIOMA</span>
+		<div class="dropup">
+			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Español (EU)
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Español(AL)</a></li>
+					<li><a href="#">English(EU)</a></li>
+					<li><a href="#">English(US)</a></li>
+				</ul>
+			</div><br>
+
+		</div>
+	</div>
+	<footer class="container-fluid text-center">
+		<p>©2019 BLIZZARD. TODOS LOS DERECHOS RESERVADOS.</p>
+	</footer>
+
+</body>
+</html>
