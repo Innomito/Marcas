@@ -9,6 +9,36 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://d2q63o9r0h0ohi.cloudfront.net/images/icons/favicon-6eb3c4e3d34a90d05dda08ee5d8024e191f23fd7500428011b48ffb7c141da590456ca053a66f9893bef76445eb88980ea51c806b650564685fc4b2b40686d17.ico" rel="icon" type="image/x-icon" />
+	<!--JavaScript de Jugadores -->
+	<script>
+		$(document).ready(function(){
+			$(".nav-tabs a").click(function(){
+				$(this).tab('show');
+			});
+			$('.nav-tabs a').on('shown.bs.tab', function(event){
+    var x = $(event.target).text();         // active tab
+    var y = $(event.relatedTarget).text();  // previous tab
+    $(".act span").text(x);
+    $(".prev span").text(y);
+});
+		});
+	</script>
+	<!--JavaScript de Heroes -->
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
 </head>
 
 <body>
@@ -42,7 +72,7 @@
 		</div>
 	</nav>
 
-	<div class="text-center"><h1>¡Ya está disponible El Auge de las Sombras!</h1><br></div>
+	<div class="text-center"><h1>¡Ya está disponible El Auge de las Sombras! <br><small>Ya ha llegado la nueva expansión</small> </h1><br></div>
 
 	<div class="container">
 
@@ -81,9 +111,145 @@
 		</div>
 	</div><br>
 
-<footer class="container-fluid text-center">
-	<p>©2019 BLIZZARD. TODOS LOS DERECHOS RESERVADOS.</p>
-</footer>
+	<div class="text-center"><h1>Los mejores jugadores de Hearsthone</h1><br></div>
+
+	<div class="container">
+		<h2>Modo Estándar <p><small>¡Ya están aquí los resultados finales de las partidas con rango de Hearthstone en los modos estándar y Arena de marzo 2019!</small></p></h2>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#home">Estándar</a></li>
+			<li><a href="#menu1">Arena</a></li>
+
+		</ul>
+
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<div class="table-responsive">          
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Posición</th>
+								<th>BattleTag</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Norwis</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Frenetic</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Ap3lkuchen</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>iprkolo</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Kalsdern</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="menu1" class="tab-pane fade">
+				<div class="table-responsive">          
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Posición</th>
+								<th>BattleTag</th>
+								<th>Media De Victorias</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>guDDummit</td>
+								<td>9,10</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Pointedteeth</td>
+								<td>9,07</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Tarkam</td>
+								<td>8,70</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>unTouchable</td>
+								<td>8,60</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Perun</td>
+								<td>8,47</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+		<hr>
+	</div>
+	
+	<div class="container">
+		<div class="text-center"><h1>Héroes</h1></div>
+		<p>Cuando juegas a Hearthstone, encarnas a uno de los nueve héroes del juego. Cada uno cuenta con un poder de héroe único y su propio conjunto de cartas de clase especiales. En esta sección descubrirás las peculiaridades de cada héroe. Los héroes se desbloquean al derrotarlos en el modo Práctica.</p>
+
+		<div class="container">
+			<div class="tab">
+				<button class="tablinks" onmouseover="openCity(event, 'Maga')">Maga</button>
+				<button class="tablinks" onmouseover="openCity(event, 'Guerrero')">Guerrero</button>
+				<button class="tablinks" onmouseover="openCity(event, 'Brujo')">Brujo</button>
+				<button class="tablinks" onmouseover="openCity(event, 'Sacerdote')">Sacerdote</button>
+				<button class="tablinks" onmouseover="openCity(event, 'Picara')">Pícara</button>
+			</div>
+
+			<div id="Maga" class="tabcontent">
+				<h2>Maga</h2>
+				<h1>Jaina Valiente</h1>
+				<p>Sus mazos incluyen muchos hechizos de daño directo que lanza alegremente a sus oponentes. Si además tenemos en cuenta su poder de héroe, que da buena cuenta de esbirros débiles, y una variedad de secretos, Jaina es una oponente versátil y letal.</p>
+			</div>
+
+			<div id="Guerrero" class="tabcontent">
+				<h2>Guerrero</h2>
+				<h1>Garrosh Grito Infernal</h1>
+				<p>Uno de los guerreros más formidables sobre la faz de Azeroth.</p> 
+			</div>
+
+			<div id="Brujo" class="tabcontent">
+				<h2>Brujo</h2>
+				<h1>Gul'dan</h1>
+				<p>La magia demoníaca es muy poderosa, pero tiene un precio.</p>
+			</div>
+
+			<div id="Sacerdote" class="tabcontent">
+				<h2>Sacerdote</h2>
+				<h1>Anduin Wrynn</h1>
+				<p>Ya sabemos lo que estás pensando: es un sacerdote.¿Qué va a hacer, matarnos a golpe de sanaciones?.</p>
+			</div>
+
+			<div id="Picara" class="tabcontent">
+				<h2>Pícara</h2>
+				<h1>Valeera Sanguinar</h1>
+				<p>Los pícaros son los maestros de los ataques por la espalda, el robo y los subterfugios.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	
+	<footer class="container-fluid text-center">
+		<p>©2019 BLIZZARD. TODOS LOS DERECHOS RESERVADOS.</p>
+	</footer>
 
 </body>
 </html>
