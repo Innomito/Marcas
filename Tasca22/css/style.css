@@ -1,3 +1,4 @@
+ @import url('https://fonts.googleapis.com/css?family=Martel&display=swap');
  /* Barra de navegación */ 
  .navbar {
   margin-bottom: 0;
@@ -36,15 +37,16 @@ footer {
 }
 
 /* Fondo de pantalla */
+
 body{
   font-size: 1.5rem;
-  font-family: Palatino Linotype; 
+  font-family: 'Martel', serif;
   background-image: url(https://d2vkoy1na2a6o6.cloudfront.net/images/ui/parchment-f5126a8249a32eb235b139078b4cc13b5fb9d2c29b0e825569312681123d721a1f2e1addb4bad78f979933e561361e2ee2c5f5881ab4fef5385c66c6276c3b44.jpg);
 }
 
 /* Color letras de barra de navegación */
 .navbar-inverse .navbar-nav>li>a{
-  color: #ffdd99;
+  color: #ffdd99 ;
 }
 
 /* Botón de jugar */

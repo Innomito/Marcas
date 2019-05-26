@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="ES">
 <head>
+	<!-- TITTLE -->
 	<title>Tasca22</title>
+
+	<!-- META -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta name="description" content="Página web creada con bootstrap">
+
+	<!-- LINK -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://d2q63o9r0h0ohi.cloudfront.net/images/icons/favicon-6eb3c4e3d34a90d05dda08ee5d8024e191f23fd7500428011b48ffb7c141da590456ca053a66f9893bef76445eb88980ea51c806b650564685fc4b2b40686d17.ico" rel="icon" type="image/x-icon" />
-	<!--JavaScript de Jugadores -->
+
+	<!-- JavaScript Libraries -->	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<!--JavaScript de Los mejores jugadores -->
 	<script>
 		$(document).ready(function(){
 			$(".nav-tabs a").click(function(){
@@ -23,6 +32,7 @@
 });
 		});
 	</script>
+
 	<!--JavaScript de Heroes -->
 	<script>
 		function openCity(evt, cityName) {
@@ -40,9 +50,7 @@
 		}
 	</script>
 </head>
-
 <body>
-	
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -51,19 +59,20 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>                        
 				</button>
-				<a class="navbar-brand" href="index.html"><img id="logo" src="https://d2q63o9r0h0ohi.cloudfront.net/images/icons/favicon-6eb3c4e3d34a90d05dda08ee5d8024e191f23fd7500428011b48ffb7c141da590456ca053a66f9893bef76445eb88980ea51c806b650564685fc4b2b40686d17.ico"></a>
+				<a class="navbar-brand" href="index.html"><img id="logo" src="https://d2q63o9r0h0ohi.cloudfront.net/images/icons/favicon-6eb3c4e3d34a90d05dda08ee5d8024e191f23fd7500428011b48ffb7c141da590456ca053a66f9893bef76445eb88980ea51c806b650564685fc4b2b40686d17.ico" alt="Logo"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="game.html">Juego</a></li>
+					<li><a href="sets.html">Conjuntos</a></li>
 					<li><a href="account.html">Crear cuenta</a></li>
 				</ul>
 				<form class="navbar-form navbar-left" action="/action_page.php">
 					<div class="form-group">
 						<input type="text" class="form-control" name="search">
 					</div>
-					<button type="Buscar" class="btn btn-default">Buscar</button>
+					<button type="submit" class="btn btn-default">Buscar</button>
 				</form>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Conectar</a></li>
@@ -114,7 +123,7 @@
 	<div class="text-center"><h1>Los mejores jugadores de Hearsthone</h1><br></div>
 
 	<div class="container">
-		<h2>Modo Estándar <p><small>¡Ya están aquí los resultados finales de las partidas con rango de Hearthstone en los modos estándar y Arena de marzo 2019!</small></p></h2>
+		<h2>Modo Estándar <small>¡Ya están aquí los resultados finales de las partidas con rango de Hearthstone en los modos estándar y Arena de marzo 2019!</small></h2>
 		<ul class="nav nav-tabs">
 			<li class="active"><a href="#home">Estándar</a></li>
 			<li><a href="#menu1">Arena</a></li>
@@ -202,8 +211,8 @@
 	</div>
 	
 	<div class="container">
-		<div class="text-center"><h1>Héroes</h1></div>
-		<p>Cuando juegas a Hearthstone, encarnas a uno de los nueve héroes del juego. Cada uno cuenta con un poder de héroe único y su propio conjunto de cartas de clase especiales. En esta sección descubrirás las peculiaridades de cada héroe. Los héroes se desbloquean al derrotarlos en el modo Práctica.</p>
+		<div class="text-center"><h1>Héroes<br><small>
+		Cuando juegas a Hearthstone, encarnas a uno de los nueve héroes del juego. Cada uno cuenta con un poder de héroe único y su propio conjunto de cartas de clase especiales. En esta sección descubrirás las peculiaridades de cada héroe. Los héroes se desbloquean al derrotarlos en el modo Práctica.</small></h1></div>
 
 		<div class="container">
 			<div class="tab">
@@ -217,34 +226,39 @@
 			<div id="Maga" class="tabcontent">
 				<h2>Maga</h2>
 				<h1>Jaina Valiente</h1>
-				<p>Sus mazos incluyen muchos hechizos de daño directo que lanza alegremente a sus oponentes. Si además tenemos en cuenta su poder de héroe, que da buena cuenta de esbirros débiles, y una variedad de secretos, Jaina es una oponente versátil y letal.</p>
+				<p>Cuando se trata de convertir maná en "AAAAAAH QUEMA", Jaina es inigualable. Sus mazos incluyen muchos hechizos de daño directo que lanza alegremente a sus oponentes. Deflagración Arcana y Fogonazo son dos claros ejemplos. Si además tenemos en cuenta su poder de héroe, que da buena cuenta de esbirros débiles, y una variedad de secretos, Jaina es una oponente versátil y letal.</p><br>
+				<h3>Poder de héroe: Explosión de fuego que produce 1 punto de daño.</h3>
 			</div>
 
 			<div id="Guerrero" class="tabcontent">
 				<h2>Guerrero</h2>
 				<h1>Garrosh Grito Infernal</h1>
-				<p>Uno de los guerreros más formidables sobre la faz de Azeroth.</p> 
+				<p>La música amansa a las fieras, y para Rexxar la música más placentera es el sonido de sus esbirros devorando a sus presas. En resumen, es profundo y paradójico. Rexxar cuenta con beneficios que convierten a esbirros indefensos en temibles máquinas de matar, y despacha a los objetivos que sobreviven con una aljaba llena de hechizos de daño directo. ¡Se abre la veda!</p>
+				<h3>Poder de héroe: Blindaje para obtener 2 puntos de armadura.</h3>
 			</div>
 
 			<div id="Brujo" class="tabcontent">
 				<h2>Brujo</h2>
 				<h1>Gul'dan</h1>
-				<p>La magia demoníaca es muy poderosa, pero tiene un precio.</p>
+				<p>La magia demoníaca es muy poderosa, pero tiene un precio. Gul'dan lo sabe mejor que nadie: tiene acceso a una cantidad ingente de esbirros demoníacos, pero aunque son fuertes y a veces baratos de invocar, siempre acaban pasando factura. Gul'dan lo tiene fácil para establecer la ventaja de cartas gracias a su poder de héroe, lo que convierte al brujo anciano en un enemigo temible.</p>
+				<h3>Poder de héroe: Transfusión de vida para robar una carta y recibir 2 puntos de daño.</h3>
 			</div>
 
 			<div id="Sacerdote" class="tabcontent">
 				<h2>Sacerdote</h2>
 				<h1>Anduin Wrynn</h1>
-				<p>Ya sabemos lo que estás pensando: es un sacerdote.¿Qué va a hacer, matarnos a golpe de sanaciones?.</p>
+				<p>Ya sabemos lo que estás pensando: es un sacerdote. ¿Qué va a hacer, matarnos a golpe de sanaciones? Es verdad que el mazo de Anduin contiene unos hechizos de sanación extremadamente potentes, pero sus hechizos de las Sombras te borrarán la sonrisa de la cara en un santiamén. Y entonces utilizará sus poderosos hechizos de control de tablero, como Control Mental, para acabar contigo. Y valiéndose de tus propios esbirros.</p>
+				<h3>Poder de héroe: Sanación inferior que restaura 2 puntos de salud.</h3>
 			</div>
 
 			<div id="Picara" class="tabcontent">
 				<h2>Pícara</h2>
 				<h1>Valeera Sanguinar</h1>
-				<p>Los pícaros son los maestros de los ataques por la espalda, el robo y los subterfugios.</p>
+				<p>Los pícaros son los maestros de los ataques por la espalda, el robo y los subterfugios. Valeera no es una excepción. Su mazo no solo incluye excelentes hechizos de daño directo y poderosas facultades de anulación, sino que además sus cartas pueden encadenar combos para obtener efectos letales. Y lo que es peor (para sus oponentes), su facultad de invocar una daga significa que esta ágil pícara puede ensuciarse las manos en cualquier momento.</p>
+				<h3>Poder de héroe: Equipa una daga 1/2.</h3>
 			</div>
 			<div class="clearfix"></div>
-		</div>
+		</div><br>
 	</div>
 	
 	<footer class="container-fluid text-center">

@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="ES">
+<head><!-- TITTLE -->
 	<title>Tasca22</title>
+
+	<!-- META -->
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<meta name="description" content="Página web creada con bootstrap">
+
+	<!-- LINK -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://d2q63o9r0h0ohi.cloudfront.net/images/icons/favicon-6eb3c4e3d34a90d05dda08ee5d8024e191f23fd7500428011b48ffb7c141da590456ca053a66f9893bef76445eb88980ea51c806b650564685fc4b2b40686d17.ico" rel="icon" type="image/x-icon" />
+
+	<!-- JavaScript Libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <nav class="navbar navbar-inverse">
@@ -19,19 +26,20 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>                        
 			</button>
-			<a class="navbar-brand" href="index.html"><img id="logo" src="https://d2q63o9r0h0ohi.cloudfront.net/images/icons/favicon-6eb3c4e3d34a90d05dda08ee5d8024e191f23fd7500428011b48ffb7c141da590456ca053a66f9893bef76445eb88980ea51c806b650564685fc4b2b40686d17.ico"></a>
+			<a class="navbar-brand" href="index.html"><img id="logo" src="https://d2q63o9r0h0ohi.cloudfront.net/images/icons/favicon-6eb3c4e3d34a90d05dda08ee5d8024e191f23fd7500428011b48ffb7c141da590456ca053a66f9893bef76445eb88980ea51c806b650564685fc4b2b40686d17.ico" alt="Favicon"></a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li><a href="index.html">Inicio</a></li>
 				<li><a href="game.html">Juego</a></li>
+				<li><a href="sets.html">Conjuntos</a></li>
 				<li><a href="account.html">Crear cuenta</a></li>
 			</ul>
 			<form class="navbar-form navbar-left" action="/action_page.php">
 				<div class="form-group">
 					<input type="text" class="form-control" name="search">
 				</div>
-				<button type="Buscar" class="btn btn-default">Buscar</button>
+				<button type="submit" class="btn btn-default">Buscar</button>
 			</form>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Conectar</a></li>
@@ -105,14 +113,14 @@
 		<div class="form-row">
 			<div class="form-group col-lg-12">
 				<label for="inputDay"></label>
-				<input type="password" class="form-control" id="inputDay" placeholder="Contraseña">
+				<input type="password" class="form-control" id="InputDay" placeholder="Contraseña">
 			</div>
 		</div>
 
 		<div class="form-row">
 			<div class="form-group col-lg-12">
 				<label for="inputState"></label>
-				<select id="inputState" class="form-control">
+				<select id="InputState" class="form-control">
 					<option selected>Selecciona una pregunta</option>
 					<option>¿Cuál fue el primer videojuego que terminaste?</option>
 					<option>¿Cuál es el nombre de tu segunda mascota?</option>
@@ -124,13 +132,13 @@
 		<div class="form-row">
 			<div class="form-group col-lg-12">
 				<label for="inputMail"></label>
-				<input type="text" class="form-control" id="inputMail" placeholder="Respuesta secreta">
+				<input type="text" class="form-control" id="InputMail" placeholder="Respuesta secreta">
 			</div>
 		</div>
 
 		<div class="form-group">
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="gridCheck">
+				<input class="form-check-input" type="checkbox" id="GridCheck">
 				<label class="form-check-label" for="gridCheck">
 					Recibir noticias y ofertas especiales de productos y servicios de terceros por email.
 				</label>
